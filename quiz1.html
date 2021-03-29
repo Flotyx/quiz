@@ -1,17 +1,25 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>My Document</title>
-<script type="text/javascript">
- function  change ( )
-{var header = document.getElementById('h1');   header.innerHTML = "CSIE@CGU";
-var para = document.getElementById("P");     para.innerHTML = "´ÁªÚ®∫ªÚ¥Œ°I°I."; 
-}   
-</script> 
-</head> 
 <body>
-<input type="button" value="Change this document." onclick="change()">
-<h1 Id="h1">CGU</h1>
-<p Id="P">¶n¥Œ¥Œ</p>
+
+<button onclick="Function()">Try it</button>
+
+<h1 id="try">CGU</h1>
+<p id="demo">Â•ΩÊ£íÊ£í</p>
+
+<script>
+function Function() {
+var btn = document.createElement("BUTTON");
+btn.innerHTML = "Change the document";
+document.body.appendChild(btn);
+btn.addEventListener("click", myFunction)
+}
+
+function myFunction() {
+  document.getElementById("try").innerHTML="CSIE@CGU";
+  document.getElementById("demo").innerHTML = "ÊÄéÈ∫ΩÈÇ£È∫ΩÊ£íÔºÅÔºÅ.";
+}
+
+</script>
 </body>
-</head>
 </html>
