@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
 <script type="text/javascript"></script>
+<script src="Quiz1.js" ></script>
 
-<button onclick="Function()">Try it</button>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#try").html("CSIE@CGU");
+$("#demo").html("怎麽那麽棒！！.");
+});
+});
+</script>
+</head>
+
+<button onclick="myFunction()">Change this document.</button>
 
 <h1 id="try">CGU</h1>
 <p id ="demo">好棒棒</p>
 
-<script src="Quiz1.js" >
-</script>
 </body>
 </html> 
