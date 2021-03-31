@@ -2,13 +2,21 @@
 <html>
 <body>
 <head>
-<script type="text/javascript"></script>
-<script src="quiz1.1.js" ></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#try").html("CSIE@CGU");
+$("#demo").html("怎麽那麽棒！！.");
+});
+});
+</script>
+</head>
 
-<button onclick="Function()">try it</button>
+<button onclick=myFunction()>Change this document.</button>
 
 <h1 id="try">CGU</h1>
-<p id ="demo">好棒棒</p>
+<P id="demo">好棒棒</P>
 
 </body>
-</html> 
+</html>
